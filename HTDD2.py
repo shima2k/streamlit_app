@@ -11,15 +11,7 @@ from remember import save_login_info, load_login_info
 # ===================== CẤU HÌNH TRANG =====================
 st.set_page_config(page_title="Điểm danh QR", page_icon="🎓", layout="wide")
 st.title("🎓 HỆ THỐNG ĐIỂM DANH BẰNG MÃ QR")
-from streamlit_webrtc import webrtc_streamer, VideoTransformerBase
-import cv2
 
-class VideoTransformer(VideoTransformerBase):
-    def transform(self, frame):
-        # Chỉnh sửa hoặc xử lý video nếu cần
-        return frame
-
-webrtc_streamer(key="qr_code_scanner", video_transformer_factory=VideoTransformer)
 
 def auto_login():
     """Tự động đăng nhập lại nếu có thông tin ghi nhớ"""
