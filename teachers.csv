@@ -1,0 +1,4 @@
+username,password,fullname,role,active
+admin1,abc,Quản trị hệ thống,admin,True
+admin,admin123,Admin,superadmin,True
+nht,123,nht,teacher,True
