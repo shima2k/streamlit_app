@@ -3,3 +3,4 @@ pandas
 opencv-python-headless
 qrcode
 datetime
+streamlit-webrtc
